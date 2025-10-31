@@ -78,19 +78,19 @@ Building a Streamlit-based Document Q&A system using RAG (Retrieval Augmented Ge
 ### Phase 1: Basic Configuration & Setup (Day 1)
 
 #### Environment Setup
-- [ ] Create `.env.example` file with template
-- [ ] Create `.env` file with actual configuration
-- [ ] Install required dependencies
-  - [ ] `pip install streamlit`
-  - [ ] `pip install langchain`
-  - [ ] `pip install langchain-ollama`
-  - [ ] `pip install langchain-chroma`
-  - [ ] `pip install pypdf2` or `pdfplumber`
-  - [ ] `pip install python-docx`
-  - [ ] `pip install openpyxl pandas`
-  - [ ] `pip install chromadb`
-  - [ ] `pip install pydantic-settings`
-- [ ] Create `requirements.txt` file
+- [x] Create `.env.example` file with template
+- [x] Create `.env` file with actual configuration
+- [x] Install required dependencies
+  - [x] `pip install streamlit`
+  - [x] `pip install langchain`
+  - [x] `pip install langchain-ollama`
+  - [x] `pip install langchain-chroma`
+  - [x] `pip install pypdf2` or `pdfplumber`
+  - [x] `pip install python-docx`
+  - [x] `pip install openpyxl pandas`
+  - [x] `pip install chromadb`
+  - [x] `pip install pydantic-settings`
+- [x] Create `requirements.txt` file
 
 #### Configuration Implementation
 - [ ] Implement `config/settings.py`
