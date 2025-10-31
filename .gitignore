@@ -1,2 +1,412 @@
-.claude
+# ===================================
+# QnA RAG AI Agent - .gitignore
+# ===================================
+
+# ====================
+# Python
+# ====================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ====================
+# Virtual Environments
+# ====================
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# ====================
+# IDEs and Editors
+# ====================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+# ====================
+# Operating System
+# ====================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ====================
+# Project Specific
+# ====================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Don't ignore .env.example
+!.env.example
+
+# Data directories
+data/uploads/*
+!data/uploads/.gitkeep
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+data/temp/*
+!data/temp/.gitkeep
+
+# Uploaded documents (if any)
+*.pdf
+*.docx
+*.xlsx
+*.csv
+# But allow sample files if you create them
+!data/samples/*.pdf
+!data/samples/*.docx
+!data/samples/*.xlsx
+!data/samples/*.csv
+
+# ====================
+# ChromaDB / Vector Store
+# ====================
+chroma/
+*.parquet
+*.bin
+*.index
+chroma.sqlite3
+chroma.sqlite3-journal
+
+# ====================
+# LLM / AI / ML
+# ====================
+
+# Model files
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Hugging Face cache
+.transformers_cache/
+.cache/huggingface/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# TensorBoard
+runs/
+logs/
+tensorboard/
+
+# ====================
+# Streamlit
+# ====================
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ====================
+# Logs
+# ====================
+*.log
+logs/
+*.log.*
+log/
+
+# ====================
+# Temporary files
+# ====================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ====================
+# Build artifacts
+# ====================
+*.whl
+*.tar.gz
+*.zip
+
+# ====================
+# Testing
+# ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+test-results/
+test-reports/
+
+# ====================
+# Documentation builds
+# ====================
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ====================
+# Package managers
+# ====================
+
+# npm (if using for any reason)
+node_modules/
+package-lock.json
+yarn.lock
+
+# uv
+.uv/
+uv.lock
+
+# ====================
+# Claude Code / AI Tools
+# ====================
+.claude/
+.cursor/
+.continue/
+
+# ====================
+# Security / Secrets
+# ====================
+
+# API keys and secrets
+secrets.yaml
+secrets.json
+*.key
+*.pem
+*.cert
+credentials.json
+service-account.json
+
+# ====================
+# Database
+# ====================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ====================
+# Miscellaneous
+# ====================
+
+# Compressed files (uploaded docs might be compressed)
+# *.zip
+# *.tar.gz
+# *.rar
+# *.7z
+
+# Local configuration overrides
+config.local.py
+settings.local.py
+
+# TODO: Consider uncommenting if you want to ignore all PDFs except in specific folders
+# But this might interfere with document uploads, so be careful
